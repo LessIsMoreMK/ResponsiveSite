@@ -1,0 +1,831 @@
+@font-face {
+	font-family: "Octopus";
+	src: url("../fonts/octopus.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+	font-family: 'Gelasio', serif;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.green {
+	color: #77b350;
+}
+
+figure {
+	paddding: 0;
+	margin: 0;
+}
+
+.square {
+	width: 50px;
+	height: 50px;
+	background-color: #77b350;
+	position: absolute;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	transform: rotate(45deg);
+	color: #FFF;
+}
+
+.icon-paper-plane-empty,
+.icon-briefcase,
+.icon-chat {
+	position: absolute;
+	transform: rotate(-45deg);
+	color: #FFF;
+	margin-top: 15px;
+	margin-left: 12px;
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.title1 {
+	margin: 0;
+	margin-top: 70px;
+	padding: 0;
+	letter-spacing: 7px;
+	color: #cccccc;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.title2 {
+	margin: 0;
+	padding: 0;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.title3 {
+	margin: 0;
+	margin-left: 45%;
+	margin-right: 45%;
+	border-top: 3px solid #77b350;
+	weight: 200px;
+}
+
+.zero {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	flex-wrap: no-wrap;
+}
+
+.zeroOne {
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 350px;
+	animation: type 3s steps(2000, end);
+	padding-top: 20px;
+	padding-left: 5%;
+	margin: 0;
+	height: 65px;
+}
+
+@keyframes type {
+	from {
+		width: 0;
+	}
+}
+
+.zeroTwo {
+	position: absolute;
+	margin: 0 80px 0 300px;
+	right: 7%;
+	height: 65px;
+	overflow: hidden;
+}
+
+.zeroThree {
+	position: absolute;
+	top: 30px;
+	right: 5%;
+	height: 65px;
+}
+
+.menu {
+	list-style-type: none;
+	line-height: 200%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.menu>li {
+	padding: 20px 0 0 20px;
+	border-top: 4px solid transparent;
+}
+
+.menu a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	border-right: 1px solid #cfcfcf;
+	padding-right: 20px;
+}
+
+.menu a:hover {
+	color: #77b350;
+}
+
+.menu>li:hover {
+	border-top: 4px solid #77b350;
+}
+
+.lastItem {
+	border: none !important;
+}
+
+#zeroNav ul {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.centerArrow {
+	margin: -10px;
+	margin-right: 10px;
+	padding: 0px;
+	color: #cccccc;
+	text-align: center;
+}
+
+#logo {
+	padding-right: 11%;
+	padding-left: 8%;
+	float: left;
+	margin-top: 20px;
+}
+
+#navi {
+	margin-top: 25px;
+	float: left;
+}
+
+.first {
+	background-image: url("../images/deskBackground.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	text-align: center;
+	padding: 150px 0 150px 0;
+	display: inline-block;
+}
+
+#firstTitle {
+	letter-spacing: 8px;
+	font-size: 70px;
+	margin: 0;
+}
+
+#firstText {
+	color: #595959;
+	font-size: 20px;
+	letter-spacing: 4px;
+}
+
+#firstText2 {
+	color: #cccccc;
+	font-size: 20px;
+	margin-bottom: 25px;
+	font-style: italic;
+}
+
+.firstButtonGreen {
+	color: #FFF;
+	background-color: #77b350;
+	font-weight: bold;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	width: 160px;
+	display: inline-block;
+	padding: 15px;
+}
+
+.firstButtonWhite {
+	color: #000;
+	font-weight: bold;
+	border: 2px solid #000;
+	border-radius: 5px;
+	width: 160px;
+	margin-left: 15px;
+	padding: 15px;
+	display: inline-block;
+}
+
+.firstButtonGreen:hover {
+	background-color: transparent;
+	border: 2px solid #000;
+	color: #000;
+}
+
+.firstButtonWhite:hover {
+	background-color: #77b350;
+	border: 2px solid transparent;
+	color: #FFF;
+}
+
+.second {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	margin-bottom: 80px;
+}
+
+.secondArticles {
+	width: 320px;
+	margin-top: 80px;
+}
+
+.secondArticles1 {
+	width: 50px;
+	padding-right: 25px;
+	padding-bottom: 20px;
+	float: left;
+}
+
+.secondArticles2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.secondUnderTitle {
+	color: #595959;
+	font-size: 13px;
+	clear: both;
+}
+
+.secondArticles3 {
+	color: #595959;
+}
+
+.third {
+	color: #FFF;
+	background-color: #6bb04d;
+	padding: 70px 70px 70px 15%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+}
+
+#thirdPhoto {
+	max-width: 100%;
+}
+
+.thirdTitle {
+	font-weight: 700;
+}
+
+#thirdLine {
+	padding: 0;
+	padding-bottom: 15px;
+	margin: 0;
+	border-top: 2px solid #FFF;
+	width: 30px;
+}
+
+.thirdButton {
+	margin-top: 30px;
+	padding: 15px 25px 15px 25px;
+	color: #FFF;
+	font-weight: 700;
+	text-align: center;
+	width: 150px;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+}
+
+.thirdButton:hover {
+	background-color: #FFF;
+	color: #6bb04d;
+}
+
+.four {
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 70px;
+	font-weight: 600;
+}
+
+.fourOne {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 70px 0 10px 0;
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.fourElement {
+	marign: 0;
+	padding: 20px;
+	border-bottom: 3px solid #cccccc;
+}
+
+.fourElement:hover {
+	color: #77b350;
+	border-bottom: 3px solid #77b350;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.five {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.fiveOne {
+	position: relative;
+	width: 100%;
+}
+
+.fiveImage {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.fiveInside {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 10%;
+	bottom: 10%;
+	left: 10%;
+	right: 10%;
+	//transform: translate(-20%, -20%);
+	//-ms-transform: translate(-20%, -20%);
+	text-align: center;
+}
+
+.fiveOne:hover .fiveImage {
+	opacity: 0.8;
+}
+
+.fiveOne:hover .fiveInside {
+	opacity: 1;
+}
+
+.fiveInside2 {
+	color: white;
+	margin-top: 20%;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.fiveIcons {
+	margin-top: 20%;
+}
+
+.fiveText {
+	font-weight: 400;
+	font-style: italic;
+	font-size: 15px;
+}
+
+.six {
+	margin: 50px;
+}
+
+.sixText {
+	margin-left: 35%;
+	margin-right: 35%;
+	margin: 50px 35% 50px 35%;
+	color: #595959;
+	text-align: center;
+	display: flex;
+}
+
+.sixButton {
+	color: #FFF;
+	background-color: #77b350;
+	font-weight: bold;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	width: 160px;
+	padding: 15px;
+	margin: auto;
+	text-align: center;
+}
+
+.sixButton:hover {
+	background-color: transparent;
+	border: 2px solid #000;
+	color: #000;
+}
+
+.seven {
+	height: 250px;
+	background-image: url("../images/cityBackground.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.sevenMain {
+	text-align: center;
+	margin: auto;
+	font-size: 25px;
+	font-weight: bold;
+	width: 200px;
+}
+
+.sevenText {
+	color: #77b350;
+}
+
+.sevenLine {
+	border-bottom: 2px solid #77b350;
+	margin: 15px 35% 15px 35%;
+}
+
+.sevenText2 {
+	font-size: 15px;
+	color: #FFF;
+}
+
+.eight {
+	text-align: center;
+}
+
+.eightOne {
+	border: 2px solid #77b350;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+}
+
+.eightOne img {
+	border-radius: 50%;
+	height: 92%;
+	width: 92%;
+	text-align: center;
+	padding-top: 6px;
+}
+
+.eightTwo {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.eightThree {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 22px;
+	color: #595959;
+}
+
+.eightDot {
+	margin-top: -10px;
+	font-size: 100px;
+	color: #cccccc;
+}
+
+.nine {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	background-color: #ededed;
+	justify-items: center;
+	padding: 80px 10% 80px 10%;
+	text-align: center;
+}
+
+.nineOne {
+	height: 50px;
+	width: 50px;
+	padding-right: 50px;
+	border-right: 1px solid #cccccc;
+}
+
+.nineOne img {
+	height: 100%;
+	width: 100%;
+}
+
+.ten {
+	background-color: #2d2f3d;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	padding: 80px 10% 80px 10%;
+	color: #FFF;
+}
+
+.tenOneOne {
+	font-family: 'Octopus';
+	font-size: 20px;
+}
+
+.tenOneTwo {
+	color: #cccccc;
+	line-height: 40px;
+}
+
+.tenOneThree {
+	background-image: url("../images/wordMap.png");
+	background-size: cover;
+	text-align: center;
+	padding-top: 25%;
+	padding-bottom: 25%;
+	font-weight: bold;
+	border: 1px solid #595959;
+}
+
+.tenTwo {
+	font-weight: bold;
+}
+
+.tenOne img {
+	height: 75px;
+	width: 75px;
+	padding: 0 10px 10px 0;
+}
+
+.tenLine {
+	border-top: 3px solid #77b350;
+	width: 30px;
+}
+
+.icon-eercast {
+	padding-right: 5px;
+}
+
+.tenPostPhoto {
+	width: 50px;
+	height: 50px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	float: left;
+}
+
+.tenPostTitle {
+	font-weight: bold;
+	color: #cccccc;
+	margin-bottom: 30px;
+	height: 60px;
+}
+
+.tenPostTitle2 {
+	color: #595959;
+	font-size: 13px;
+	clear: both;
+	height: 60px;
+}
+
+.tenLine2 {
+	border-top: 1px solid #595959;
+	padding-bottom: 20px;
+}
+
+.eleven {
+	background-color: #22232b;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 10% 25px 10%;
+	color: #FFF;
+	font-weight: 400;
+}
+
+@media screen and (min-width: 480px) {
+	.zeroOne{
+		font-size: 25px;
+	}
+	.zeroTwo {
+		overflow-y: scroll
+	}
+	.title1 {
+		font-size: 10px;
+	}
+	.title2 {
+		font-size: 30px;
+	}
+	#firstTitle {
+		font-size: 30px;
+	}
+	#firstText {
+		font-size: 16px;
+	}
+	#firstText2 {
+		font-size: 16px;
+	}
+	.firstButtonGreen {
+		display: flex;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	.second {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.third {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.five {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.sixText {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	.nine {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+	}
+	.nineOne {
+		margin-bottom: 0;
+		border: 0;
+	}
+	.ten {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.eleven {
+		flex-direction: column;
+	}
+	.elevenOne {
+		padding-top: 20px;
+	}
+}
+
+@media screen and (min-width: 736px) {
+	.zeroOne{
+		font-size: 35px;
+	}
+	.zeroTwo {
+		overflow-y: scroll
+	}
+	.title1 {
+		font-size: 12px;
+	}
+	.title2 {
+		font-size: 40px;
+	}
+	#firstTitle {
+		font-size: 50px;
+	}
+	#firstText {
+		font-size: 27px;
+	}
+	#firstText2 {
+		font-size: 17px;
+	}
+	.firstButtonGreen {
+		display: inline-block;
+	}
+	.second {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.third {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.five {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.sixText {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	.nine {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+	}
+	.nineOne {
+		margin-bottom: 0;
+		border: 0;
+	}
+	.ten {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.eleven {
+		flex-direction: row;
+	}
+	.elevenOne {
+		padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.zeroTwo {
+		overflow-y: scroll
+	}
+	.title1 {
+		font-size: 15px;
+	}
+	.title2 {
+		font-size: 50px;
+	}
+	#firstTitle {
+		font-size: 60px;
+	}
+	#firstText {
+		font-size: 19px;
+	}
+	#firstText2 {
+		font-size: 19px;
+	}
+	.second {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.third {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.five {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.sixText {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+	.nine {
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+	.nineOne {
+		margin-bottom: 0;
+		border: 0;
+	}
+	.ten {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.zeroTwo {
+		overflow: hidden;
+	}
+	.title1 {
+		font-size: 15px;
+	}
+	.title2 {
+		font-size: 60px;
+	}
+	#firstTitle {
+		font-size: 70px;
+	}
+	#firstText {
+		font-size: 20px;
+	}
+	#firstText2 {
+		font-size: 20px;
+	}
+	.second {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.third {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.five {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.sixText {
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+	.nine {
+		grid-template-columns: repeat(6, 1fr);
+		grid-gap: 0;
+	}
+	.nineOne {
+		padding-right: 50px;
+		border-right: 1px solid #cccccc;
+	}
+	.ten {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
